@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Bateria</title>
+    <meta name="author" content="Alexoid" />
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Bateria</h1>
+        <div class="marco">
+            <div class="bateria">
+
+
+                <!--dividimos bateria en tres secciones despues cada seccion en bloques in-lineblock y dentro de los bloques 
+                otros divs q contienen los eventos cada uno con una clase comun y un id unico-->
+                <div class="aplicacion">
+                    <div class="div1">
+                        <div class="platos" id="c1"></div>
+                        <div class="platos" id="c2">
+                            <div  id="hithat" data-key="87" class="key" onclick="hihat.play()">
+
+                            </div>
+                        </div>
+                        <div class="platos" id="c3">
+                            <div id="mid-tomb" data-key="85" class="key" onclick="midTomb.play()"></div>
+                        </div>
+                        <div class="platos" id="c4">
+                            <div id="mid-tomb2" data-key="73" class="key" onclick="midTomb2.play()"></div>
+                        </div>
+                        <div class="platos" id="c5">
+                            <div id="crash" data-key="84" class="key" onclick="crash.play()"></div>
+                        </div>
+                        <div class="platos" id="c6">
+                            <div id="crash2" data-key="89" class="key" onclick="crash2.play()"></div>
+                        </div>
+                        <div class="platos" id="c7"></div>
+
+                    </div>
+                    <div class="div2">
+                        <div class="cajas" id="m1">
+                            <div id="ride" data-key="81" class="key" onclick="ride.play()"></div>
+
+                        </div>
+                        <div class="cajas" id="m2">
+                            <div id="bombo" data-key="71" class="key" onclick="bombo.play()"></div>
+                        </div>
+                        <div class="cajas" id="m3">
+                            <div id="caja" data-key="69" class="key" onclick="snare.play()">
+                                <div data-key="82" id='caja2' class='key' onclick="snare2.play()"></div>
+
+
+                            </div>
+                        </div>
+                        <div class="cajas" id="m4">
+                            <div id="bombo2" data-key="72" class="key" onclick="bombo2.play()"></div>
+                        </div>
+                        <div class="cajas" id="m5">
+                            <div id="low-tomb" data-key="79" class="key" onclick="lowTomb.play()"></div>
+                        </div>
+                        <div class="cajas" id="m6">
+
+                        </div>
+                        <div class="cajas" id="m7">
+                            <div id="pad" data-key="32" class="key" onclick="clap.play()"></div>
+                        </div>
+                    </div>
+                    <div class="div3">
+                        <div class="bombo" id="l1"></div>
+                        <div class="bombo" id="l2">
+                            <div id="low-tomb2" data-key="80" class="key" onclick="lowTomb2.play()"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+                
+                <footer>Made by Alexoid.</footer>
+            </div>
+
+
+
+
+        </div>
+        <!-- las teclas q usamos para hacer sonar la bateria-->
+        <div class="teclas">
+            <div class='tecla' data-key="81"><kbd>Q</kbd> <span>ride</span></div>
+            <div class='tecla' data-key="87"><kbd>W</kbd> <span>hihat</span></div>
+            <div class='tecla' data-key="69"><kbd>E</kbd> <span>snare</span></div>
+            <div class='tecla' data-key="82"><kbd>R</kbd> <span>snare</span></div>
+            <div class='tecla' data-key="84"><kbd>T</kbd> <span>crash</span></div>
+            <div class='tecla' data-key="89"><kbd>Y</kbd> <span>crash 2</span></div>
+            <div class='tecla' data-key="85"><kbd>U</kbd> <span>tomb</span></div>
+            <div class='tecla' data-key="73"><kbd>I</kbd> <span>tomb 2</span></div>
+            <div class='tecla' data-key="79"><kbd>O</kbd> <span>low</span></div>
+            <div class='tecla' data-key="80"><kbd>P</kbd> <span>low 2</span></div>
+            <div class='tecla' data-key="71"><kbd>G</kbd> <span>kick</span></div>
+            <div class='tecla' data-key="72"><kbd>H</kbd> <span>kick</span></div>
+            <div class='tecla' data-key="32"><kbd>Space</kbd><span>clap</span></div>
+        </div>
+
+
+    </div>
+    <audio src="sonidos/brass-sd.wav" data-key="69"></audio>
+    <audio src="sonidos/brass-sd.wav" data-key="82"></audio>
+    <audio src="sonidos/909-bright-ohh.wav" data-key="87"></audio>
+    <audio src="sonidos/ambient_tom_1.wav" data-key="85"></audio>
+    <audio src="sonidos/ambient_tom_2.wav" data-key="73"></audio>
+    <audio src="sonidos/big-ol-yamaha-kick.wav" data-key="71"></audio>
+    <audio src="sonidos/big-ol-yamaha-kick.wav" data-key="72"></audio>
+    <audio src="sonidos/deepcrash.wav" data-key="84"></audio>
+    <audio src="sonidos/curecrash.wav" data-key="89"></audio>
+    <audio src="sonidos/KPR77038.wav" data-key="79"></audio>
+    <audio src="sonidos/KPR77043.wav" data-key="80"></audio>
+    <audio src="sonidos/balloon-pop.wav" data-key="32"></audio>
+    <audio src="sonidos/CYMRIDE12.wav" data-key="81"></audio>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
