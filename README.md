@@ -29,9 +29,8 @@ Additional description about the project and its features.
 
 In this project:
 
-- HTML
-- CSS
-- Javascript
+- Add border efect on every keyboard event.
+- Add diferent sounds in every keyboard and click event.
 
 
 
