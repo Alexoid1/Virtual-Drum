@@ -13,7 +13,7 @@ Additional description about the project and its features.
 - HTML,
 - JavaScript
 - Css
-- gists (json)
+
 ## Live Demo
 
 [Live Demo Link](https://alexoid1.github.io/Virtual-Drum/)
